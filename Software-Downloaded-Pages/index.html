@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Download Center</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Software Download Center</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#popular">Popular</a>
+            <a href="#all-software">All Software</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Filter Section -->
+        <section class="filters">
+            <h2>Filter Software</h2>
+            <label for="category">Category:</label>
+            <select id="category" onchange="filterSoftware()">
+                <option value="all">All Categories</option>
+                <option value="productivity">Productivity</option>
+                <option value="utilities">Utilities</option>
+                <option value="graphics">Graphics</option>
+                <option value="development">Development</option>
+            </select>
+
+            <label for="os">Operating System:</label>
+            <select id="os" onchange="filterSoftware()">
+                <option value="all">All OS</option>
+                <option value="windows">Windows</option>
+                <option value="mac">MacOS</option>
+                <option value="linux">Linux</option>
+            </select>
+        </section>
+
+        <!-- Popular Software -->
+        <section id="popular">
+            <h2>Popular Software</h2>
+            <div class="software-grid" id="software-list">
+                <!-- Software cards will be inserted here by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Software Download Center</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
